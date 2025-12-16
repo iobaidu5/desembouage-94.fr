@@ -3849,7 +3849,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
 }
 
-@media (min-width:768px) {
+@media (min-width:990px) {
   .navbar-nav {
     float: left;
     margin: 0
@@ -8245,3 +8245,30 @@ fieldset[disabled] .datepicker table tr td.today:hover:hover {
 .list1, .list2 {
   margin-left: 10px !important;
 }
+
+
+li {
+  color: #8f8f8f;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  text-align: left;
+}
+
+.to-show-990{
+  display: none;
+}
+
+
+@media (max-width:991px) {
+
+  .to-show-990{
+    display: block;
+  }
+
+  .to-hide-990{
+    display: none !important;
+  }
+
+  }
