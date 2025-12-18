@@ -111,93 +111,45 @@ document.addEventListener("DOMContentLoaded", function () {
 </head>
 
 <body id="backTotop">
-  <!-- <header>
+  <header>
   <div class="menu2-wrapper">
     <div id="menu2">
       <div class="container-fluid">
-        <div class="row flex-middle">
-          <div class="col-md-2 col-sm-12 text-center">
+        <!-- Large Desktop Layout (1280px and above) -->
+        <div class="row flex-middle hidden-xs hidden-sm hidden-md visible-lg">
+          <div class="col-lg-2 text-center">
             <a href="./index.html">
               <div id="logo">
                 <img src="./assets/img/logo.png" class="img-responsive" alt="logo">
               </div>
             </a>
           </div>
-          <div class="col-md-8 col-sm-6">
-            <nav class="navbar">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                  data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav menu-top">
-                  <li class="active"><a href="./index.html">Accueil</a></li>
-                  <li><a class="" href="./desembouage-val-de-marne.html">Désembouage Val-De-Marne</a></li>
-                  <li><a class="" href="./les-etapes-du-desembouage.html">Les étapes du désembouage</a></li>
-
-                  <li><a class="" href="./entreprise.html">Notre entreprise</a></li>
-                  <li><a class="" href="./avis.html">Avis</a></li>
-                  <li><a class="" href="./devis.html">Devis</a></li>
-                  <li><a class="" href="./contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-          <div class="col-md-2 col-sm-6 text-center">
-            <a href="tel:0169257754" class="button1 cta">
-              <span class="txt">01 69 25 77 54</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header> -->
-
-<header>
-  <div class="menu2-wrapper">
-    <div id="menu2">
-      <div class="container-fluid">
-        <!-- Desktop layout (md and up) -->
-        <div class="row flex-middle hidden-xs hidden-sm">
-          <div class="col-md-2 text-center">
-            <a href="./index.html">
-              <div id="logo">
-                <img src="./assets/img/logo.png" class="img-responsive" alt="logo">
-              </div>
-            </a>
-          </div>
-          <div class="col-md-8">
+          <div class="col-lg-8">
             <nav class="navbar">
               <div class="collapse navbar-collapse" id="desktop-nav-menu">
                 <ul class="nav navbar-nav menu-top">
-                  <li class="active"><a href="./index.html">Accueil</a></li>
-                  <li><a class="" href="./desembouage-val-de-marne.html">Désembouage Val-De-Marne</a></li>
-                  <li><a class="" href="./les-etapes-du-desembouage.html">Les étapes du désembouage</a></li>
-                  <li><a class="" href="./entreprise.html">Notre entreprise</a></li>
-                  <li><a class="" href="./avis.html">Avis</a></li>
-                  <li><a class="" href="./devis.html">Devis</a></li>
-                  <li><a class="" href="./contact.html">Contact</a></li>
+                  <li><a href="./index.html">Accueil</a></li>
+                  <li><a href="./desembouage-val-de-marne.html">Désembouage Val-De-Marne</a></li>
+                  <li><a href="./les-etapes-du-desembouage.html">Les étapes du désembouage</a></li>
+                  <li><a href="./entreprise.html">Notre entreprise</a></li>
+                  <li><a href="./avis.html">Avis</a></li>
+                  <li><a href="./devis.html">Devis</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
                 </ul>
               </div>
             </nav>
           </div>
-          <div class="col-md-2 text-center">
+          <div class="col-lg-2 text-center" style="margin-top: 10px;">
             <a href="tel:0169257754" class="button1 cta">
               <span class="txt">01 69 25 77 54</span>
             </a>
           </div>
         </div>
 
-        <!-- Mobile layout (xs and sm) -->
-        <div class="row flex-middle visible-xs visible-sm">
+        <!-- Medium Screen Layout (1279px to 992px) -->
+        <div class="row flex-middle hidden-xs hidden-sm visible-md hidden-lg">
           <!-- First row: Centered logo -->
-          <div class="col-xs-12 text-center mobile-logo-row">
+          <div class="col-md-12 text-center">
             <a href="./index.html">
               <div id="logo">
                 <img src="./assets/img/logo.png" class="img-responsive" alt="logo">
@@ -205,19 +157,67 @@ document.addEventListener("DOMContentLoaded", function () {
             </a>
           </div>
           
-          <!-- Second row: Button1 on left, hamburger on right -->
-          <div class="col-xs-12 mobile-nav-row">
-            <div class="row">
-              <div class="col-xs-6 text-left mobile-button-col">
+          <!-- Second row: Button1 on left, hamburger menu on right -->
+          <div class="col-md-12">
+            <div class="row" style="align-items: center;">
+              <div class="col-md-2 text-left" style="margin-top: 10px;">
                 <a href="tel:0169257754" class="button1 cta">
                   <span class="txt">01 69 25 77 54</span>
                 </a>
               </div>
-              <div class="col-xs-6 text-right mobile-menu-col">
+              <div class="col-md-10 text-right">
+                <nav class="navbar">
+                  <div class="collapse navbar-collapse" id="desktop-nav-menu">
+                    <ul class="nav navbar-nav menu-top">
+                      <li><a href="./index.html">Accueil</a></li>
+                      <li><a href="./desembouage-val-de-marne.html">Désembouage Val-De-Marne</a></li>
+                      <li><a href="./les-etapes-du-desembouage.html">Les étapes du désembouage</a></li>
+                      <li><a href="./entreprise.html">Notre entreprise</a></li>
+                      <li><a href="./avis.html">Avis</a></li>
+                      <li><a href="./devis.html">Devis</a></li>
+                      <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            
+            <!-- Medium screen menu content (collapsible) -->
+            <!-- <div class="row">
+              <div class="col-md-12">
+                <div class="collapse navbar-collapse" id="medium-nav-menu">
+                  <ul class="nav navbar-nav menu-top">
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./desembouage-val-de-marne.html">Désembouage Val-De-Marne</a></li>
+                    <li><a href="./les-etapes-du-desembouage.html">Les étapes du désembouage</a></li>
+                    <li><a href="./entreprise.html">Notre entreprise</a></li>
+                    <li><a href="./avis.html">Avis</a></li>
+                    <li><a href="./devis.html">Devis</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Small Screen Layout (below 992px) -->
+        <div class="row flex-middle visible-xs visible-sm hidden-md hidden-lg">
+          <!-- Single row: Logo on left, hamburger on right -->
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                <a href="./index.html">
+                  <div id="logo">
+                    <img src="./assets/img/logo.png" class="img-responsive" alt="logo">
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-6 text-right">
                 <nav class="navbar">
                   <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse"
-                      data-target="#mobile-nav-menu">
+                      data-target="#small-nav-menu">
                       <span class="sr-only">Navigation</span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
@@ -228,18 +228,23 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </div>
             
-            <!-- Mobile menu content (collapsible) -->
+            <!-- Small screen menu content (collapsible) with button1 inside -->
             <div class="row">
               <div class="col-xs-12">
-                <div class="collapse navbar-collapse" id="mobile-nav-menu">
+                <div class="collapse navbar-collapse" id="small-nav-menu">
                   <ul class="nav navbar-nav menu-top">
-                    <li class="active"><a class="nav" href="./index.html">Accueil</a></li>
-                    <li><a class="nav" href="./desembouage-val-de-marne.html">Désembouage Val-De-Marne</a></li>
-                    <li><a class="nav" href="./les-etapes-du-desembouage.html">Les étapes du désembouage</a></li>
-                    <li><a class="nav" href="./entreprise.html">Notre entreprise</a></li>
-                    <li><a class="nav" href="./avis.html">Avis</a></li>
-                    <li><a class="nav" href="./devis.html">Devis</a></li>
-                    <li><a class="nav" href="./contact.html">Contact</a></li>
+                    <li class="li"><a href="./index.html">Accueil</a></li>
+                    <li class="li"><a href="./desembouage-val-de-marne.html">Désembouage Val-De-Marne</a></li>
+                    <li class="li"><a href="./les-etapes-du-desembouage.html">Les étapes du désembouage</a></li>
+                    <li class="li"><a href="./entreprise.html">Notre entreprise</a></li>
+                    <li class="li"><a href="./avis.html">Avis</a></li>
+                    <li class="li"><a href="./devis.html">Devis</a></li>
+                    <li class="li"><a href="./contact.html">Contact</a></li>
+                    <li>
+                      <a href="tel:0169257754" class="button1 cta">
+                        <span class="txt">01 69 25 77 54</span>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -250,8 +255,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   </div>
 </header>
-
-
 
   
 
