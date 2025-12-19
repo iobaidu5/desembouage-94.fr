@@ -3449,7 +3449,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a:hover {
   text-decoration: none;
   background-color: #eee;
-  color: #000;
+  color: #000 !important;
 }
 
 .nav>li.disabled>a {
