@@ -3448,7 +3448,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a:focus,
 .nav>li>a:hover {
   text-decoration: none;
-  background-color: #eee
+  background-color: #eee;
+  color: #000;
 }
 
 .nav>li.disabled>a {
@@ -8257,13 +8258,6 @@ fieldset[disabled] .datepicker table tr td.today:hover:hover {
   text-align: left;
 }
 
-.li>a:hover{
-  color: #000 !important;
-}
-
-.li>a:active{
-  color: #000 !important;
-}
 
 .to-show-990{
   display: none;
