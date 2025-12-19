@@ -8239,6 +8239,7 @@ fieldset[disabled] .datepicker table tr td.today:hover:hover {
 
 .nav>li>a {
   padding: 10px 14px;
+  white-space: nowrap;
 }
 
 
